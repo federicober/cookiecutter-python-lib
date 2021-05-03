@@ -1,0 +1,13 @@
+version: 2
+{% if cookiecutter.docs_backend == "sphinx" %}sphinx:
+  configuration: docs/conf.py
+{% elif cookiecutter.docs_backend == "mkdocs" %}mkdocs:
+  configuration: docs/conf.py
+{% else %}{{ raise }}
+{% endif %}
+formats: all
+python:
+  version: 3.8
+  install:
+    - requirements: docs/requirements.txt
+    - path: .

@@ -1,0 +1,11 @@
+{
+  "project_name": "my-python-package",
+  "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
+  "friendly_name": "{{ cookiecutter.project_name.replace('-', ' ').title() }}",
+  "author": "Federico OBERNDORFER",
+  "email": "federico.ober@hotmail.com",
+  "github_user": "federicober",
+  "version": "0.1.0",
+  "dockerized": false,
+  "docs_backend": ["sphinx", "mkdocs"]
+}

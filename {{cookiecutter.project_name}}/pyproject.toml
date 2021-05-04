@@ -29,6 +29,8 @@ flake8-bandit = "^2.1.2"
 flake8-docstrings = "^1.5.0"
 darglint = "^1.5.2"
 flake8-isort = "^4.0.0"
+nbstripout = "^0.4.0"
+
 
 [tool.poetry.scripts]
 {{cookiecutter.project_name}} = "{{cookiecutter.package_name}}.__main__:main"

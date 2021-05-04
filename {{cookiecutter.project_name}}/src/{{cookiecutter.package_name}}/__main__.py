@@ -1,4 +1,4 @@
-"""Click CLI app"""
+"""Click CLI app."""
 import click
 
 

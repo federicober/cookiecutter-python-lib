@@ -30,6 +30,7 @@ flake8-docstrings = "^1.5.0"
 darglint = "^1.5.2"
 flake8-isort = "^4.0.0"
 nbstripout = "^0.4.0"
+pylint = "^2.8.2"
 
 
 [tool.poetry.scripts]
@@ -45,11 +46,15 @@ source = ["{{cookiecutter.package_name}}"]
 [tool.coverage.report]
 show_missing = true
 fail_under = 100
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:"
+]
 
 [tool.isort]
-profile = "google"
-known_first_party = "funk_lines"
-line_length = 100
+profile = "black"
+known_first_party = "{{cookiecutter.project_name}}"
 src_paths = ["src", "tests"]
 
 [build-system]

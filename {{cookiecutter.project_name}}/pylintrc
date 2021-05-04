@@ -1,9 +1,5 @@
-# This Pylint rcfile contains a best-effort configuration to uphold the
-# best-practices and style described in the Google Python style guide:
+# This is a modified file based on the Google Python style guide:
 #   https://google.github.io/styleguide/pyguide.html
-#
-# Its canonical open-source location is:
-#   https://google.github.io/styleguide/pylintrc
 
 [MASTER]
 
@@ -287,12 +283,6 @@ no-space-check=
 
 # Maximum number of lines in a module
 max-module-lines=99999
-
-# String used as indentation unit.  The internal Google style guide mandates 2
-# spaces.  Google's externaly-published style guide says 4, consistent with
-# PEP 8.  Here, we use 2 spaces, for conformity with many open-sourced Google
-# projects (like TensorFlow).
-indent-string='  '
 
 # Number of spaces of indent required inside a hanging  or continued line.
 indent-after-paren=4

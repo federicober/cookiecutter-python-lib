@@ -1,5 +1,8 @@
 # Cookiecutter Python library
 
+![Pipeline status](https://github.com/federicober/cookiecutter-python-lib/actions/workflows/test.yml/badge.svg)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
 Cookiecutter Python Library is a complete Python library template that contains support for:
 - Packaging
 - Testing

@@ -16,11 +16,11 @@ def delete_other_docs_backend(docs_backend: str) -> None:
     os.rename("_docs", "docs")
 
 
-if "sphinx" == "mkdocs":
+if "{{cookiecutter.docs_backend}}" == "mkdocs":
     delete_other_docs_backend("mkdocs")
 
-elif "sphinx" == "sphinx":
+elif "{{cookiecutter.docs_backend}}" == "sphinx":
     delete_other_docs_backend("sphinx")
 
 else:
-    raise ValueError("Unrecognized docs_backend (sphinx)")
+    raise ValueError("Unrecognized docs_backend ({{cookiecutter.docs_backend}})")

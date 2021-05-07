@@ -1,5 +1,5 @@
-import subprocess
 import pathlib
+import subprocess
 
 
 def test_pyproject_toml(default_generated_project):

@@ -1,1 +1,32 @@
 site_name: {{ cookiecutter.friendly_name }}
+site_description: "{{ cookiecutter.friendly_name }}"
+site_author: {{cookiecutter.author}}
+
+repo_url: "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}"
+site_url: "https://{{cookiecutter.project_name}}.readthedocs.io"
+
+theme:
+  name: material
+
+nav:
+  - index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition # warning, note, and other info blocks
+  - pymdownx.details # collapsible admonition blocks
+  - codehilite # syntax highlighter
+  - toc: # lateral table of contents
+      permalink: true
+  - pymdownx.tabbed # tabbed content
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.magiclink # converts urls and emails to hyperlinks
+  - pymdownx.emoji
+  - markdown.extensions.footnotes
+  - markdown.extensions.abbr

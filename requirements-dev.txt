@@ -1,2 +1,4 @@
 cookiecutter==1.7.2
 pytest==6.2.3
+mkdocs-material==7.1.4
+mkdocs==1.1.2

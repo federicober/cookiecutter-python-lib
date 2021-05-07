@@ -24,6 +24,7 @@ sphinx = "^3.2.0" # converts .rst files to static websites for documentation
 sphinx-autobuild = "^0.7.1" # Reloads sphinx if source file change
 {% elif cookiecutter.docs_backend == "mkdocs" %}
 mkdocs = "^1.1.2" # converts .md files to static websites for documentation
+mkdocs-material = "^7.1.4"
 {% endif %}
 pre-commit = "^2.6.0"  # easy pre-commit hooks
 nbstripout = "^0.4.0" # Clears notebook output before commits
